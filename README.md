@@ -1,5 +1,7 @@
 ## Local development
 
+
+
 ### 1. Clone this repository:
 
 ### 2. Navigate to the directory
@@ -8,6 +10,8 @@
 
 ```
 npm install @11ty/eleventy
+
+npm install
 ```
 
 ### 4. Edit _data/metadata.json
