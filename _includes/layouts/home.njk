@@ -4,3 +4,6 @@ section: home
 ---
 
 {{ layoutContent | safe }}
+
+{% set projectslist = collections.project %}
+{% include "components/projectslist.njk" %}
