@@ -1,5 +1,13 @@
 # Netlify CMS Configuration File
 
+# Cloudinary
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: mariorzgz
+    api_key: 952656762616425
+
 # The backend option specifies how to access the content for your site
 backend:
   name: git-gateway
@@ -30,6 +38,10 @@ collections:
         name: "images"
         widget: "image"
         choose_url: true
+        allow_multiple: true
+        media_library:
+          config:
+            multiple: true
 
       - label: "Featured Image"
         name: "thumbnail"
