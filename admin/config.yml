@@ -29,7 +29,7 @@ collections:
         name: "thumbnail"
         widget: "image"
         choose_url: true
-        default: "/uploads/thumbnail.png"
+        default: "thumbnail.png"
         media_library:
           config:
             multiple: false
@@ -37,10 +37,6 @@ collections:
         name: "images"
         widget: "image"
         choose_url: true
-        media_library:
-          config:
-            multiple: true
-
 
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog

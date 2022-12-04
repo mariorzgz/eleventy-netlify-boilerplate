@@ -6,4 +6,4 @@ tags:
 thumbnail: /static/img/amor-fisico.png
 images: /static/img/amor-fisico3.png
 ---
-T﻿his is my first project
+This is my first project

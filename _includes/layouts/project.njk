@@ -13,10 +13,16 @@ section: project
 
   {{ layoutContent | safe }}
 
+  {% if thumbnail %}
+    <p>
+      <img src={{ thumbnail }}>
+    </p>
+  {% endif %}
+
   {% if tags %}
     <p>
     {% for tag in tags %}
-      {%- if tag != "post" -%}
+      {%- if tag != "project" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
         <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
       {%- endif -%}
@@ -27,5 +33,5 @@ section: project
 </article>
 
 <nav>
-  <a href="{{ '/projects/' | url }}">← Projects index</a>
+  <a href="{{ '/' | url }}">← Projects index</a>
 </nav>

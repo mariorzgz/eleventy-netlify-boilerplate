@@ -1,6 +1,15 @@
 <section>
+
 	{% for project in projectslist | reverse %}
+
 		<article{% if project.url == url %} data-current="current item"{% endif %}>
+
+      {% if project.data.thumbnail %}
+        <a href="{{ project.url | url }}">
+          <img src={{ project.data.thumbnail }}>
+        </a>
+      {% endif %}
+
 			<h3>
 				<a href="{{ project.url | url }}">
 					{% if project.data.title %}
@@ -10,11 +19,13 @@
 					{% endif %}
 				</a>
 			</h3>
+
 			<p>
 				<time datetime="{{ project.date | machineDate }}">
 					<small>{{ project.date | readableDate }}</small>
 				</time>
 			</p>
+
 			{% if project.data.tags %}
 				<p>
 					{% for tag in project.data.tags %}
@@ -25,6 +36,7 @@
 					{% endfor %}
 				</p>
 			{% endif %}
+
 		</article>
 	{% endfor %}
 </section>
