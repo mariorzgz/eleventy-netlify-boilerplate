@@ -37,6 +37,9 @@ collections:
         name: "images"
         widget: "image"
         choose_url: true
+        media_library:
+          config:
+            multiple: true
 
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
