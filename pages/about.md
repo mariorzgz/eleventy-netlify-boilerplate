@@ -6,5 +6,7 @@ permalink: /about/index.html
 eleventyNavigation:
   key: About
   order: 1
+tags:
+  - about
 ---
 This is the about page.

@@ -1,8 +1,8 @@
-<section>
+<section class="projects-list">
 
 	{% for project in projectslist | reverse %}
 
-		<article{% if project.url == url %} data-current="current item"{% endif %}>
+		<article{% if project.url == url %} data-current="current item"{% endif %} class="project">
 
       {% if project.data.thumbnail %}
         <a href="{{ project.url | url }}">
