@@ -31,7 +31,7 @@ collections:
         widget: "image"
         choose_url: true
 
-        - label: "Featured Image"
+      - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
         choose_url: true
