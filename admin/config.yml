@@ -3,10 +3,9 @@
 # Cloudinary
 
 media_library:
-  name: cloudinary
+  name: uploadcare
   config:
-    cloud_name: mariorzgz
-    api_key: 952656762616425
+    publicKey: c8d6580d36d55db432e7
 
 # The backend option specifies how to access the content for your site
 backend:
