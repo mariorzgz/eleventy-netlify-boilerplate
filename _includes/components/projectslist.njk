@@ -10,7 +10,9 @@
         </a>
       {% endif %}
 
-			<h3>
+      <a href="{{ project.url | url }}" class="full-link"></a>
+
+			<h3 class="title">
 				<a href="{{ project.url | url }}">
 					{% if project.data.title %}
 						{{ project.data.title }}
@@ -20,18 +22,18 @@
 				</a>
 			</h3>
 
-			<p>
+			<p class="date">
 				<time datetime="{{ project.date | machineDate }}">
 					<small>{{ project.date | readableDate }}</small>
 				</time>
 			</p>
 
 			{% if project.data.tags %}
-				<p>
+				<p class="tags">
 					{% for tag in project.data.tags %}
 		  			{%- if tag != "project" -%}
 		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			<a href="{{ tagUrl | url }}" rel="tag" class="tag {{ tag }}">{{ tag }} </a>
 		  			{%- endif -%}
 					{% endfor %}
 				</p>
