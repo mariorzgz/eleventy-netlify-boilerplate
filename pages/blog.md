@@ -7,6 +7,4 @@ permalink: /blog/index.html
 eleventyNavigation:
   key: Blog
   order: 2
-  visible: false
-
 ---

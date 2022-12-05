@@ -1,8 +1,6 @@
 ---
 title: About us
-metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.desciption will be used
-  instead.
+metaDescription: about
 date: 2017-01-01T00:00:00.000Z
 tags:
   - about
@@ -10,8 +8,4 @@ permalink: /about/index.html
 eleventyNavigation:
   key: About
   order: 1
-  visible: true
 ---
-Hola :)
-
-![](https://ucarecdn.com/705db2ab-8ed1-49a0-9b89-dee1a44e99a9/)

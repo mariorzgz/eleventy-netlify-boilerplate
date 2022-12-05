@@ -6,8 +6,4 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 0
-  visible: false
-
 ---
-
-this is samu gambín :)
