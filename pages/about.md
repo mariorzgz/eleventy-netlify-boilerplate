@@ -6,6 +6,7 @@ permalink: /about/index.html
 eleventyNavigation:
   key: About
   order: 1
+  visible: true
 tags:
   - about
 ---

@@ -2,8 +2,7 @@
 layout: layouts/base.njk
 section: home
 ---
-
-{{ layoutContent | safe }}
+{% include "components/hero.njk" %}
 
 {% set projectslist = collections.project %}
 {% include "components/projectslist.njk" %}
